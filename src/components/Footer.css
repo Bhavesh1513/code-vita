@@ -1,0 +1,42 @@
+
+ 
+.icon{
+    border-radius: 8px;
+
+    transition: all .3s linear;
+
+     
+ } 
+
+.icon:hover {
+    transform: scale(1.5); 
+  }
+
+.footer-links { transition: all 0.8s ease-in-out; }
+.footer-links:hover { transform: scalex(0.3); } */
+
+
+.footer-links { transition: all 0.4s ease-in-out; }
+.footer-links:hover{
+    transform: translateX(10px);
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  height: 4px;
+  width: 100%;
+  left:0;
+  background-color: #f67f23;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
